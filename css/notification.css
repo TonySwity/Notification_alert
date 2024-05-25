@@ -1,8 +1,8 @@
 :root {
 	--accent-color: #080a14;
 	--white-color: #ffffff;
+	--blackgreen-color: #004758;
 }
-
 body {
 	font-family: 'Calibri';
 	background-color: var(--accent-color);
@@ -13,7 +13,7 @@ body {
 	margin: 0 auto;
 }
 .notification__header {
-	background-color: var(--accent-color);
+	background-color: var(--blackgreen-color);
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 15px;
@@ -34,6 +34,7 @@ body {
 	color: red;
 	transition: 1s;
 	opacity: 0;
+	margin-bottom: 15px;
 }
 .notification__form {
 	display: flex;
@@ -45,13 +46,17 @@ body {
 }
 .notification__form input {
 	color: var(--white-color);
-	background-color: var(--accent-color);
+	background-color: var(--blackgreen-color);
 	height: 30px;
 	min-width: 75px;
 }
+
+.notification__form input::content {
+	color: red;
+}
 .notification__form textarea {
 	color: var(--white-color);
-	background-color: var(--accent-color);
+	background-color: var(--blackgreen-color);
 	resize: none;
 	margin: 0px 10px;
 	padding: 10px;
@@ -70,27 +75,35 @@ body {
 	border: none;
 	padding: 10px 15px;
 	color: var(--white-color);
-	background-color: var(--accent-color);
+	background-color: var(--blackgreen-color);
 	border: 1px solid #222746;
 	position: relative;
+	transition: 1s;
 }
 .notification__form > button:hover,
 .notification__list > button:hover {
+	transition: 1s;
 	background: linear-gradient(45deg, #00ccff, var(--accent-color), #06e011);
 	opacity: 0.9;
 }
 .notification__list h3 {
 	color: var(--white-color);
 }
+
+.notification__list > div {
+	color: var(--white-color);
+	margin: 0 0 15px 0;
+}
+
 .notification__item {
 	display: flex;
 	justify-content: space-between;
-	background-color: #eee;
+	background-color: #004758;
 	padding: 10px;
 	margin-bottom: 10px;
 }
 .notification__warning {
-	background-color: #fff1d7;
+	background-color: #357b94;
 }
 button[data-time] {
 	display: flex;
