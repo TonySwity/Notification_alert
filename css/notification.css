@@ -98,7 +98,7 @@ body {
 .notification__item {
 	display: flex;
 	justify-content: space-between;
-	background-color: #004758;
+	background-color: var(--blackgreen-color);
 	padding: 10px;
 	margin-bottom: 10px;
 }
